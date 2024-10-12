@@ -1,0 +1,140 @@
+---
+import { t } from 'i18n:astro';
+
+// Mendapatkan data dari i18n
+const { title, jobs } = t('experience', {
+  returnObjects: true
+});
+
+// Debugging: Log jobs untuk memeriksa strukturnya
+console.log(jobs);
+
+// Pastikan jobs adalah array
+const jobsArray = Array.isArray(jobs) ? jobs : [];
+
+// Ambil deskripsi pekerjaan
+const jobsDescription = jobsArray.flatMap(job => job.jobs_description);
+
+// Normalisasi judul untuk ID section
+const normalizeTitle = title
+  .toLowerCase()
+  .replaceAll(' ', '-')
+  .normalize('NFD')
+  .replace(/[\u0300-\u036f]/g, '')
+---
+
+<section id={normalizeTitle} class="experience">
+  <h2>{title}</h2>
+  <section class="jobs">
+    <div class="jobs-descriptions">
+      {
+        jobsDescription.map(({ title, time, description, list }, descIndex) => (
+          <div class:list={['description']}>  <!-- Hapus kelas active -->
+            <h3>{title}</h3>
+            <div class="job-time">
+              {time.map((time, timeIndex) => (
+                <span key={timeIndex}>
+                  <time class="headline-4" datetime={time}>
+                    {time}
+                  </time>
+                  {timeIndex % 2 === 0 && <span>—</span>}
+                </span>
+              ))}
+              {time.length <= 1 && <span class="badge">Actual</span>}
+            </div>
+            <p>{description.join(' ')}</p>
+            <ul>
+              {list.map((item, listIndex) => (
+                <li key={listIndex}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</section>
+
+<style>
+  .experience {
+    padding-bottom: 120px;
+
+    & h2 {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      align-items: center;
+      white-space: nowrap;
+
+      @media (width >= 768px) {
+        justify-content: start;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 1px;
+          background-color: var(--border-color);
+        }
+      }
+    }
+  }
+
+  .jobs {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 48px;
+
+    & .jobs-descriptions {
+      flex: 1;
+
+      & .description {
+        animation: fade 1200ms ease;
+
+        & > * + *,
+        & ul li {
+          margin-top: 16px;
+        }
+
+        & .job-time {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          & .badge {
+            background-color: var(--bg-secondary-color);
+            border-radius: 1000px;
+            padding: 2px 12px;
+            border: 1px solid var(--text-color);
+            font-size: 0.875rem;
+            transition: var(--transition-bg);
+          }
+        }
+
+        p {
+          text-wrap: pretty;
+        }
+
+        & .headline-4,
+        & p,
+        & ul {
+          color: var(--text-description-color);
+        }
+      }
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
+<script>
+  // Hapus skrip tab jika tidak diperlukan
+</script>

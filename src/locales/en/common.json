@@ -1,0 +1,158 @@
+{
+  "title": "Web Frontend Developer - Puput Novita Indraini",
+  "description": "Specialist in HTML5, CSS5, JavaScript, Java, Laravel, and Bootstrap",
+  "navbar": [
+    {
+      "label": "Home",
+      "href": "#top"
+    },
+    {
+      "label": "Experience",
+      "href": "/en/#experience"
+    },
+    {
+      "label": "Projects",
+      "href": "/en/#projects"
+    },
+    {
+      "label": "About me",
+      "href": "/en/#about-me"
+    }
+  ],
+  "hero": {
+    "job_availability": "Available for work",
+    "title": "Hi, I'm Puput Novita",
+    "job_title": "<strong>Web Frontend Developer</strong>",
+    "description": "Specialist in HTML5, CSS5, JavaScript, Java, Laravel, and Bootstrap",
+    "cta": "Contact me"
+  },
+  
+  "experience": {
+    "title": "Experience",
+    "jobs": [
+      {
+        "jobs_description": [
+          {
+            "title": "Bina Nusantara Computer Club (BNCC) Activist",
+            "time": ["Oct 2023", "Feb 2024"],
+            "description": [
+              "Participated in multiple roles across seven event committees, primarily focusing on UI/UX and visual design"
+            ],
+            "list": [
+              "Designed user interfaces for web applications",
+              "Created visual content for social media campaigns",
+              "Collaborated on branding materials for events"
+            ]
+          },
+          {
+            "title": "Bina Nusantara Computer Club (BNCC) Staff",
+            "time": ["Oct 2023", "Feb 2024"],
+            "description": [
+              "Supervised content creation and managed media partnerships"
+            ],
+            "list": [
+              "Developed social media strategies to boost engagement",
+              "Built relationships with sponsors and media partners",
+              "Mentored new members in communication skills"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  
+  "projects": {
+    "title": "Projects",
+    "projects": [
+      {
+        "title": "Govspeak",
+        "description": "A communication platform between government and citizens, emphasizing accessibility and user engagement through thoughtful UI/UX design",
+        "image": "/src/images/projects/govspeak.png",
+        "techs": ["HTML", "CSS", "JavaScript", "PHP"],
+        "code": "Code",
+        "href": "https://github.com/puttnovvindr/govspeak-2.git",
+        "preview": "Preview"
+      },
+      {
+        "title": "Nexa",
+        "description": "An educational platform aimed at helping students prepare for internships and scholarships, featuring an intuitive interface and comprehensive resources",
+        "image": "/src/images/projects/nexa.png",
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "code": "Code",
+        "href": "href1",
+        "preview": "Preview"
+      },
+      {
+        "title": "Altera",
+        "description": "An educational platform aimed at helping students prepare for internships and scholarships, featuring an intuitive interface and comprehensive resources",
+        "image": "/src/images/projects/altera.png",
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "code": "Code",
+        "href": "https://github.com/puttnovvindr/govspeak-2.git",
+        "preview": "Preview"
+      },
+      {
+        "title": "IBalance",
+        "description": "A mental health platform offering AI-based company recommendations, customized to align with users' mental health tolerance levels.",
+        "image": "/src/images/projects/IBalance.png",
+        "techs": ["HTML", "CSS", "Javascript", "PHP"],
+        "code": "Code",
+        "href": "https://github.com/puttnovvindr/govspeak-2.git",
+        "preview": "Preview"
+      },
+      {
+        "title": "Craft",
+        "description": "A digital agency platform delivering innovative branding and web development solutions, integrating smooth UI/UX design with backend functionality",
+        "image": "/src/images/projects/craft.png",
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "code": "Code",
+        "href": "craft",
+        "preview": "Preview"
+      },
+      {
+        "title": "Connecta",
+        "description": "Educational platform designed to help students prepare for internships and scholarships, with a user-friendly interface and detailed resources",
+        "image": "/src/images/projects/connecta.png",
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "code": "Code",
+        "href": "https://github.com/puttnovvindr/govspeak-2.git",
+        "preview": "Preview"
+      }
+    ]
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "I'm Puput Novita Indraini",
+    "description": "I’m a fifth-semester Computer Science student at Bina Nusantara University, with a big passion for web development and UI/UX. I specialize in HTML5, CSS3, JavaScript, Java, Laravel, and Bootstrap, and love building websites that don’t just work but look great too. With a strong focus on user experience, I’m always looking for ways to make things smoother and more intuitive. I stay up-to-date with the latest tech and trends, aiming to create cool, user-friendly solutions for real-world problems"
+  },
+  "contact": {
+    "title": "Available for work or internship opportunities",
+    "subtitle": "I'd love to be a part of your team"
+  },
+  "footer": {
+    "designed": {
+      "designed_with": "Designed with",
+      "designed_by": "by"
+    },
+    "developed": {
+      "developed_with": "Made with",
+      "developed_by": "by"
+    }
+  }
+}
