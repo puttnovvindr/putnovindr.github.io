@@ -1,19 +1,19 @@
 ---
-import { t } from 'i18n:astro';
+import { t } from 'i18n:astro'
 
 // Mendapatkan data dari i18n
 const { title, jobs } = t('experience', {
   returnObjects: true
-});
+})
 
 // Debugging: Log jobs untuk memeriksa strukturnya
-console.log(jobs);
+console.log(jobs)
 
 // Pastikan jobs adalah array
-const jobsArray = Array.isArray(jobs) ? jobs : [];
+const jobsArray = Array.isArray(jobs) ? jobs : []
 
 // Ambil deskripsi pekerjaan
-const jobsDescription = jobsArray.flatMap(job => job.jobs_description);
+const jobsDescription = jobsArray.flatMap((job) => job.jobs_description)
 
 // Normalisasi judul untuk ID section
 const normalizeTitle = title
@@ -28,24 +28,23 @@ const normalizeTitle = title
   <section class="jobs">
     <div class="jobs-descriptions">
       {
-        jobsDescription.map(({ title, time, description, list }, descIndex) => (
-          <div class:list={['description']}>  <!-- Hapus kelas active -->
+        jobsDescription.map(({ title, time, description, list }) => (
+          <div class:list={['description']}>
             <h3>{title}</h3>
             <div class="job-time">
-              {time.map((time, timeIndex) => (
-                <span key={timeIndex}>
+              {time.map((time) => (
+                <div>
                   <time class="headline-4" datetime={time}>
                     {time}
                   </time>
-                  {timeIndex % 2 === 0 && <span>—</span>}
-                </span>
+                </div>
               ))}
               {time.length <= 1 && <span class="badge">Actual</span>}
             </div>
             <p>{description.join(' ')}</p>
             <ul>
-              {list.map((item, listIndex) => (
-                <li key={listIndex}>{item}</li>
+              {list.map((item) => (
+                <li>{item}</li>
               ))}
             </ul>
           </div>

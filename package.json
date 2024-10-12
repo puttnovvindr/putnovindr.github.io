@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "Puput Novita Indraini",
   "description": "Unicorn Sparkle es la plantilla de portafolio definitiva para desarrolladores que quieren brillar.",
   "keywords": [
     "portfolio",
@@ -28,20 +28,20 @@
   },
   "lint-staged": {
     "./**/*.{js,mjs,cjs}": [
-      "eslint --cache --fix --ext .js,.mjs,.cjs ./",
-      "prettier --cache --write \"./**/*.{js,mjs,cjs}\""
+      "eslint --cache --fix",
+      "prettier --cache --write"
     ],
     "./**/*.ts": [
-      "eslint --cache --fix --ext .ts ./",
-      "prettier --cache --write \"./**/*.ts\""
+      "eslint --cache --fix",
+      "prettier --cache --write"
     ],
     "./src/**/*.astro": [
-      "eslint --cache --fix --ext .astro ./src/",
-      "prettier --cache --write \"./src/**/*.astro\""
+      "eslint --cache --fix",
+      "prettier --cache --write"
     ],
-    "./src/**/*.css": "prettier --cache --write \"./src/**/*.css\"",
-    "./**/*.json": "prettier --cache --write \"./**/*.json\"",
-    "./**/*.yml": "prettier --cache --write \"./**/*.yml\""
+    "./src/**/*.css": "prettier --cache --write",
+    "./**/*.json": "prettier --cache --write",
+    "./**/*.yml": "prettier --cache --write"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -66,8 +66,8 @@
     "@typescript-eslint/eslint-plugin": "7.0.1",
     "@typescript-eslint/parser": "7.0.0",
     "astro-eslint-parser": "1.0.3",
-    "eslint": "8.57.0",
-    "eslint-config-love": "47.0.0",
+    "eslint": "8.57.1",
+    "eslint-config-love": "84.1.1",
     "eslint-config-prettier": "9.1.0",
     "eslint-config-standard": "17.1.0",
     "eslint-plugin-astro": "1.2.4",

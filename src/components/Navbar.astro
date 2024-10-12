@@ -30,22 +30,6 @@ const links = t('navbar', { returnObjects: true })
 <dialog>
   <nav>
     {links.map(({ label, href }) => <a href={href}>{label}</a>)}
-    <a
-      class="language"
-      href={Astro.url.pathname.includes('/en')
-        ? switchLocalePath('es')
-        : switchLocalePath('en')}
-    >
-      <span>
-        <Icon name="language" size={18} />
-      </span>
-      <span>
-        {Astro.url.pathname.includes('/en') ? 'Español' : 'English'}
-      </span>
-    </a>
-    <div>
-      <ToggleSwitch />
-    </div>
   </nav>
   <button id="close" aria-label="Close">
     <Icon name="close" size={28} />

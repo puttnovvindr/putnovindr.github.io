@@ -26,7 +26,7 @@
     "description": "Specialist in HTML5, CSS5, JavaScript, Java, Laravel, and Bootstrap",
     "cta": "Contact me"
   },
-  
+
   "experience": {
     "title": "Experience",
     "jobs": [
@@ -60,7 +60,7 @@
       }
     ]
   },
-  
+
   "projects": {
     "title": "Projects",
     "projects": [
@@ -77,11 +77,7 @@
         "title": "Nexa",
         "description": "An educational platform aimed at helping students prepare for internships and scholarships, featuring an intuitive interface and comprehensive resources",
         "image": "/src/images/projects/nexa.png",
-        "techs": [
-          "HTML",
-          "CSS",
-          "JavaScript"
-        ],
+        "techs": ["HTML", "CSS", "JavaScript"],
         "code": "Code",
         "href": "href1",
         "preview": "Preview"
@@ -90,11 +86,7 @@
         "title": "Altera",
         "description": "An educational platform aimed at helping students prepare for internships and scholarships, featuring an intuitive interface and comprehensive resources",
         "image": "/src/images/projects/altera.png",
-        "techs": [
-          "HTML",
-          "CSS",
-          "JavaScript"
-        ],
+        "techs": ["HTML", "CSS", "JavaScript"],
         "code": "Code",
         "href": "https://github.com/puttnovvindr/govspeak-2.git",
         "preview": "Preview"
@@ -112,11 +104,7 @@
         "title": "Craft",
         "description": "A digital agency platform delivering innovative branding and web development solutions, integrating smooth UI/UX design with backend functionality",
         "image": "/src/images/projects/craft.png",
-        "techs": [
-          "HTML",
-          "CSS",
-          "JavaScript"
-        ],
+        "techs": ["HTML", "CSS", "JavaScript"],
         "code": "Code",
         "href": "craft",
         "preview": "Preview"
@@ -125,11 +113,7 @@
         "title": "Connecta",
         "description": "Educational platform designed to help students prepare for internships and scholarships, with a user-friendly interface and detailed resources",
         "image": "/src/images/projects/connecta.png",
-        "techs": [
-          "HTML",
-          "CSS",
-          "JavaScript"
-        ],
+        "techs": ["HTML", "CSS", "JavaScript"],
         "code": "Code",
         "href": "https://github.com/puttnovvindr/govspeak-2.git",
         "preview": "Preview"
